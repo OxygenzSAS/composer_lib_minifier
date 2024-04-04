@@ -54,7 +54,7 @@ class Minifier implements MiddlewareInterface
             header('Cache-Control: max-age='.$this->cacheTime);
         }
         
-        header('Content-type: text/plain');
+        header('Content-type: application/javascript');
         foreach ($this->js_directory as $path){
             if(empty($path)){
                 continue;
